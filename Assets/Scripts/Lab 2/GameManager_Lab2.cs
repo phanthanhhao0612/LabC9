@@ -1,8 +1,8 @@
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PersistentGameManager : MonoBehaviour
+public class GameManager_Lab2 : MonoBehaviour
 {
-    public static PersistentGameManager instance;
+    public static GameManager_Lab2 instance;
 
     public int score = 100;
 
@@ -17,5 +17,10 @@ public class PersistentGameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    void Start()
+    {
+        Debug.Log("GameManager_Lab2 đang tồn tại, Score = " + score);
     }
 }

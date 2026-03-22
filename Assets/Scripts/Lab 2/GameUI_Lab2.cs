@@ -7,6 +7,6 @@ public class GameUI_Lab2 : MonoBehaviour
 
     void Start()
     {
-        scoreText.text = "Score (Lab2): " + PersistentGameManager.instance.score;
+        scoreText.text = "Score Lab2: " + GameManager_Lab2.instance.score;
     }
 }
